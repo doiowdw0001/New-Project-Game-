@@ -1,13 +1,14 @@
 import pygame
 from pygame.locals import *
 pygame.init()
+#กำหนดภาพ
+f = pygame.OPENGL | RESIZABLE
+screen = pygame.display.set_mode([800, 600],f)
 
-screen = pygame.display.set_mode([800, 600])
-
-f = True
-while f:
+t = True
+while t:
     for e in pygame.event.get():
         if e.type == QUIT:
-            f = False
+            t = False
 
 
