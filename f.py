@@ -3,8 +3,8 @@ import pygame
 from pygame.locals import *
 pygame.init()
 #Edit screen side
-f = pygame.RESIZABLE | DROPFILE | HWSURFACE
-screen = pygame.display.set_mode([800, 600],f)
+s = pygame.RESIZABLE
+screen = pygame.display.set_mode([800, 600],s)
 
 #Name caption
 pygame.display.set_caption("Stupid game")
@@ -20,13 +20,13 @@ bix = []
 biy = []
 cbix = []
 cbiy = []
-num_of_bi = []
+num_of_bi = 10
 
-for i in num_of_bi:
-    enemy.append(pygame.image.load(r'D:\c\img\Enemy\broccoli.png'))
-    bix.append(random.randint[(0, 740)])
-    biy.append(random.randint[(0, 250)])
-    cbix.append(random.randint[(-1, 1)])
+for i in range (num_of_bi):
+    enemy.append(pygame.image.load(r'D:\c\img\Enemy\3306571.png'))
+    bix.append(random.randint(0, 740))
+    biy.append(random.randint(0, 250))
+    cbix.append(random.randint(-1, 1))
     cbiy.append(1)
 
 def bi(x, y, i):
