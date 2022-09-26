@@ -20,14 +20,14 @@ bix = []
 biy = []
 cbix = []
 cbiy = []
-num_of_bi = 10
+num_of_bi = []
 
 for i in num_of_bi:
-    enemy.append(pygame.image.load('D:\c\img\Enemy\broccoli.png'))
-    bix.append(random.randint(0, 740))
-    biy.append(random.randint(0, 250))
-    cbix.append(random.randint(-1, 1))
-    cbiy.append(random.randint(1))
+    enemy.append(pygame.image.load(r'D:\c\img\Enemy\broccoli.png'))
+    bix.append(random.randint[(0, 740)])
+    biy.append(random.randint[(0, 250)])
+    cbix.append(random.randint[(-1, 1)])
+    cbiy.append(1)
 
 def bi(x, y, i):
     screen.blit(enemy[i], (x, y))
@@ -48,7 +48,7 @@ while t:
     screen.blit(player,(380, 520))
     pygame.display.flip()
 
-for i in range(num_of_bi):
+for i in range (num_of_bi):
     bix[i] += cbix[i]
     biy[i] += cbiy[i]
     if biy[i] >= 600:
